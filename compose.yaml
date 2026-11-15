@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: corebanck-db
+    environment:
+      POSTGRES_DB: corebanck
+      POSTGRES_USER: corebanck
+      POSTGRES_PASSWORD: corebanck
+    ports:
+      - "5433:5432"
+    volumes:
+      - corebank-data:/var/lib/postgresql/data
+volumes:
+  corebank-data:

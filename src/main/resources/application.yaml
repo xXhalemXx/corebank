@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: corebank
+  datasource:
+    url: jdbc:postgresql://localhost:5433/corebank
+    username: corebank
+    password: corebank
+  jpa:
+    hibernate:
+      ddl-auto: validate      # Hibernate checks the schema, never changes it
+    open-in-view: false       # avoids lazy-loading surprises in controllers
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true            # see every SQL query in the console (useful in M2)
+  flyway:
+    enabled: true
+  docker:
+    compose:
+      lifecycle-management: start-only   # don't stop the DB when the app stops
