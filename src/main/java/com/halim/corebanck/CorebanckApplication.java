@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CorebanckApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(CorebanckApplication.class, args);
 	}
 
