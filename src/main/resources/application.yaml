@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 spring:
   application:
     name: corebank
@@ -19,6 +18,4 @@ spring:
   docker:
     compose:
       lifecycle-management: start-only   # don't stop the DB when the app stops
-=======
-spring.application.name=corebanck
->>>>>>> c0c2e692617cf655b76769ccdce604cad1839821
+
